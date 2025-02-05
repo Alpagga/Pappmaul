@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayerisches Kartenspiel</title>
+    <style>
+        /* Container für den Kartendeck-Stapel */
+        #deck {
+            position: relative;
+            width: 100px;
+            height: 150px;
+            margin: 0 auto;
+        }
+
+        .card {
+            width: 500px;
+            height: 750px;
+            margin: 0;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;  /* Karten sind zunächst unsichtbar */
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Stil für den Button */
+        #deckButton {
+            position: absolute;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #deckButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bayerisches Kartenspiel</h1>
+    <div id="deck"></div>
+    <button id="deckButton">Nächste Karte aufdecken</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
